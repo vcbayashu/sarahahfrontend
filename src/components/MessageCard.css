@@ -1,0 +1,21 @@
+/* src/MessageCard.css */
+
+.message-card {
+  background: rgb(240, 148, 198);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  max-width: 300px;
+  color: black;
+}
+
+.message-card h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.message-card p {
+  font-size: 1em;
+  line-height: 1.5;
+}

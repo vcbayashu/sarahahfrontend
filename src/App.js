@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { ToastContainer } from "react-toastify";
+import SeeMessages from "./components/SeeMessages";
+import SendMessages from "./components/SendMessage";
+import "./index.css";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ToastContainer />
+      <Router>
+        <Routes>
+          <Route path="/" Component={SendMessages} />
+          <Route path="/xL3iX88dT0LBo6ody95qU" Component={SeeMessages} />
+        </Routes>
+      </Router>
     </div>
   );
 }
